@@ -2,8 +2,8 @@
 
   <ion-side-menu-content>
     <ion-nav-bar class="bar-calm">
-      <ion-nav-back-button>
-      </ion-nav-back-button>
+      <!--<ion-nav-back-button>
+      </ion-nav-back-button>-->
 
       <ion-nav-buttons side="left">
         <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
@@ -21,7 +21,6 @@
 
           <p><img class="user-image" ng-src="app/assets/images/icon.png" spinner-on-load></p>
 
-
           <h2 class="text-center">Baptist Convention</h2>
           <p class="text-center">Daily Encounter 2018</p>
         </ion-item>
@@ -33,23 +32,22 @@
           <i class="icon ion-ios-eye"></i>
           <h2 class="menu-text">Prayer Focus</h2>
         </ion-item>
-        <ion-item>
-          <h2 class="text-left">About Us</h2>
-          <p>This app was prepared and produced <br>by the Publications Department, <br>Nigerian Baptist Convention, <br>P.M.B, 5113, Ibadan, <br>Oyo State, Nigeria.<br><br>Copyright 2018. <br> All Rights Reserved.</p>
+        <ion-item class="item-icon-left" nav-clear menu-close ui-sref="tab.todos">
+          <i class="icon ion-clipboard"></i>
+          <h2 class="menu-text">To do</h2>
         </ion-item>
-       <!--
-       <ion-item class="item-icon-left" nav-clear menu-close href="#/app/dashboard/lang/english">
-          <h2 class="menu-text text-center">About Us</h2>
+        <ion-item class="item-icon-left" nav-clear menu-close ui-sref="tab.notes">
+          <i class="icon ion-compose"></i>
+          <h2 class="menu-text">NotePad</h2>
         </ion-item>
-       <ion-item class="item-icon-left" nav-clear menu-close href="#/app/dashboard/yoruba">
-          <i class="icon ion-medkit"></i>
-          <h2 class="menu-text">Yoruba</h2>
+        <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.aboutus">
+          <i class="icon ion-home"></i>
+          <h2 class="menu-text">About Us</h2>
         </ion-item>
-        <ion-item class="item-icon-left" nav-clear menu-close href="#/app/dashboard/hausa">
-          <i class="icon ion-medkit"></i>
-          <h2 class="menu-text">Hausa</h2>
-        </ion-item>-->
-
+        <ion-item class="item-icon-left" nav-clear menu-close ui-sref="app.contactus">
+          <i class="icon ion-location"></i>
+          <h2 class="menu-text">Contact Us</h2>
+        </ion-item>
       </ion-list>
     </ion-content>
   </ion-side-menu>
